@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a73737;  /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    font-family: 'Roboto';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+body, html{
+    height: 100%;
+   width: 100%;;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand{
+    font-size: 1.45em;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active:hover{
+    border-bottom: 2px solid #58C9B9;
+}
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active{
+  font-size: 1.35em;
+  color: #fff;
+}
+
+.menu{
+    background-image: url('./beverage-brewed-coffee-caffeine-374885.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;  
+    width: 100vw;  
+}
+.menu-dark-bg{
+    background-color: rgba(51, 51, 51, 0.5);
+    height: 100vh;
+}
+
+
+.introPrag p{
+    font-size: 2.12em;
+    width: 750px;
+    position: absolute;    
+    top: 30%;
+    left: 30%;
+    text-align:center;
+}
+
+.fa-chevron-down{
+    background-color: #58C9B9;
+    padding: 10px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;  
+}
+
+
+/* Second Section */
+#center-contant{   
+  padding: 3em 0;
+  font-family: 'Montserrat';  
+}
+
+
+
+/* ***************************************** */
+/* Section#3 Slide Show For pictures */
+/* ************************************* */
+
+
+.mySlides1 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #333;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: rgb(156, 156, 156);
+  color: #333;
+}
+
+/* ***************** */
+/* Section: Footer */
+/* ****************** */
+
+.footer-text{ 
+  flex-direction: row;
+  justify-content: center;   
+  background-color: rgba(51, 51, 51, 0.3);
+  padding: 90px 150px;
+}
+
+
+
+
+.list-text ul li {
+  list-style: none;
+  
+}
+.list-text ul li a:hover {
+  color: #58C9B9;
+  text-decoration: none;
+  
+  
+}
+
+.list-text .fa-envelope-open, .list-text .fa-phone-square,.list-text .fa-fax{
+    background-color: #58C9B9;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin: 5px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .menubar{   
+       flex-direction: column;
+       text-align: center;
+       display: inline-block;
+       
+    }
+
+    .list-text ul li {
+     display: inline-block;
+      
+    }
+
+
+    .navbar > .container{
+      text-align: center;    
+     display: block;
+     
+  }
+
+  .introPrag p{
+    width: 250px;
+    position: absolute;    
+    top: 30%;
+    font-size: 1.35em;
+    text-align: center;
+  }
+  .fa-chevron-down{
+    display: none;
+  }
+  
+
+}
